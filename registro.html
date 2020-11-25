@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   
 <head>
-    <title>Inicio</title>
+    <title>Registro</title>
     <link rel="icon" href="imagenes/icon.gif">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,47 +32,44 @@
             </div>
         </nav>
         <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <h1>Registro de la pagina</h1>
+                </div>
+
+            </div>
         </div>
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg">
-                    <h1 style="text-decoration: underline; text-align: center;">Un espacio dedicado a las pc desde sus origenes hasta los 2000</h1>
+            <form action="/index.html" class="was-validated">
+                <div class="form-group">
+                    <label for="uname">Nombre:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Ingrese Nombre" name="uname" required>
+                    <div class="valid-feedback">Valido.</div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="uname">Apellido:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Ingrese Apellido" name="uname" required>
+                    <div class="valid-feedback">Valido.</div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Direccion de correo:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese Correo" name="pswd" required>
+                    <div class="valid-feedback">Valido.</div>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember" required> Estoy de acuerdo de acuerdo con el</input><a href="contrato.html" title="Contrato de uso">contrato de uso</a>.
+                        <div class="valid-feedback">Valido.</div>
+                        <div class="invalid-feedback">Debe marcar esta casilla para continuar</div>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
+    
 
-        <div class="container" style="background-image: url('imagenes/hojas.jpg');">
-            <div class="row">
-                <div class="col-lg">
-                    <a style="text-decoration: underline;">PC-XT</a>
-                    <img src="imagenes/PC-XT.png" alt="Foto IBM PC-XT" class="img-fluid"/>
-                    <p>
-                        La era de las PC-XT inicio junto con la salida de la IBM PC, muchos clones basados en el diseño de la IBM PC 
-                        y su sucesor el IBM PC-XT se vendieron entre los años 1981 a 1983, usaron procesadores desde el intel
-                        8088 hasta el intel 80286
-                    </p>
-                </div>
-                <div class="col-lg">
-                    <a style="text-decoration: underline;">PC-AT</a>
-                    <img src="imagenes/PC-AT.png" alt="Foto IBM PC-AT" class="img-fluid"/>
-                    <p>
-                        La era de las PC-AT inicio con la salida de la IBM PC-AT en 1984 que al igual que sus antecesoras
-                        dio lugar a toda una gama de pc clonicas, apartir de esta generacion se comenzaron a abandonar los
-                        monitores monocromos, usaron procesadores desde el intel 80286 hasta en algunos casos intel pentium III
-                    </p>
-                </div>
-                <div class="col-lg">
-                    <a style="text-decoration: underline;">PC-ATX</a>
-                    <img src="imagenes/PC-ATX.png" alt="Foto de PC compaq pentium 3" class="img-fluid"/>
-                    <p>
-                        La mal llamada era de las PC-ATX Comenzo con la salida de las fuentes atx junto con los Intel Pentium en el año
-                        1995 y sigue siendo el estandar a hoy en dia, una de sus principales implementaciones fueron las "Fuentes Inteligentes"
-                        que podian apagarse por software
-                    </p>
-                </div>
-            </div>
-        </div>
         <!-- esto es para que el bootstrap no se desarme solo -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
